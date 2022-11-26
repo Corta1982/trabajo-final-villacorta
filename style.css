@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Luckiest+Guy&family=Montserrat+Alternates:ital,wght@1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Luckiest+Guy&family=Urbanist&display=swap');
+
+
+li, p{
+    font-family: 'Fredoka One', cursive;
+    font-family: 'Luckiest Guy', cursive;
+    font-family: 'Urbanist', sans-serif;
+}
+
+header{
+    display:inline-flexbox;
+    background-color:rgb(92, 91, 91);
+    
+}
+.tittle{
+    display: flex;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    color:#fff
+}
+
+h1{
+    font-family: 'Fredoka One', cursive;
+    font-family: 'Luckiest Guy', cursive;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 50px;
+    margin-left: 25%;
+}
+
+header div img{
+    width: 100px;
+    height: 100px;
+    margin-left: 30px;
+    margin-top: 20px;
+
+}
+
+nav{
+    display: flex;
+    justify-content:end;
+    width: auto;
+    background: #000;
+}
+ul{
+    display:flex;
+    background-color: rgb(136, 133, 133);
+    list-style: none;
+    width: auto;
+    margin: 0px;
+    padding: 0px;
+    
+
+}
+li a {
+    padding: 10px 20px;
+    display: inline-block;
+    color:#fff;
+    text-decoration:none;
+}
+
+li a:hover{
+    background:#ccc;
+    color:#000;
+}
+
+main{
+    display: flex;
+    background: #ccc;
+    width: auto;
+}
+
+.photo{
+    width:40em;
+    margin: 0px;
+    
+}
+
+.saludo {
+    display: flex;
+    background-color: lightsteelblue;
+    margin-left: 40px;
+    margin: 20px;
+    font-size: 30px;
+    padding: 20px;
+    
+}
+
+p{
+    text-align:justify;
+}
+span{
+    font-weight: bold;
+}
+
+footer{
+    background-color: rgb(143, 158, 177);
+    width: auto;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+}
+
+.redes{
+    width: 50px;
+    margin-left: 50px;
+    margin-top: 10px;
+    
+}

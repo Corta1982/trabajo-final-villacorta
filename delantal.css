@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+header{
+    display: flex;
+    background-color: #00d3f854;
+    height: 150px;
+}
+
+h1{
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 7em;
+    margin-left:20px;
+    translate: 400px;
+       
+}
+h1:hover{
+    transform: scale(1.2);
+}
+
+
+.principal{
+    height: 600px;
+    background-image: url(/imagenes/menu-delantal.png);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: 80px;
+    margin-right: 50px;
+    
+}
+.inicio{
+    font-size: 30px;
+    text-align: center;
+    width: 800px;
+    margin-left: 100px;
+    padding-top: 100px;
+    font-family: 'Permanent Marker', cursive;
+}
+
+
+.diseño{
+    height: 100px;
+    background-image:url(/imagenes/fondo-colores.jpg);
+}
+
+h2{
+    font-family: 'Nerko One', cursive;  
+    padding-top: 5px;
+    font-size: 6em;
+    font-weight: 900;
+    letter-spacing: 30px;
+}
+
+.cuadros{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: bisque;
+    row-gap: 10px;
+    column-gap: 10px;
+    grid:
+    'item1 item1 item1 item1'
+    'item2 item2 item3 item3';
+    margin-bottom: 20px;
+}
+
+.img1{
+    width: 300px;
+}
+.img2{
+    width: 200px;
+    margin-left: 20%;
+    
+}
+.img3{
+    width: 200px;
+    margin-left: 20%;
+}
+
+.cuadros > div{
+    background-color: rgba(252, 153, 153, 0.8);
+    padding: 20px 20px;
+}
+
+.item1 {
+    grid-area:item1;
+    display: inline-flex;
+    
+}
+
+.item2 {
+    grid-area:item2;
+}
+.item3 {
+    grid-area:item3;
+    
+}
+
+.text3{
+    display:inline-flex;
+    font-size: 30px;
+    margin-left: 10px;
+    font-family: 'Patrick Hand', cursive;
+}
+
+.contenedor-tarjetas{
+    margin-top: 30px;
+}
+
+.panel-horizontal{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contenido{
+    padding: 15px 0;
+}
+
+.card{
+    width: 300px;
+}
+
+fieldset{
+    border: 2px solid #ccc;
+}
+footer{
+    background-color:hsl(186, 80%, 86%);
+    padding: 1rem 1.5rem 3rem;
+    color: false;
+}
+
+footer p{
+    margin-left: 40%;
+    margin-top: 1em;
+}
+
+.derechos{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.lista{
+    display: flex;
+    list-style-type: none;
+}
+
+.listaItem{
+    margin-left: 20px;
+}
