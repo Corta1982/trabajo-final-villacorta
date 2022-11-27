@@ -66,17 +66,15 @@ h2{
     margin-bottom: 20px;
 }
 
+
+.cuadros > div > img{
+    width: 300px;
+    margin-left: 20%;
+}
+
 .img1{
     width: 300px;
-}
-.img2{
-    width: 200px;
-    margin-left: 20%;
-    
-}
-.img3{
-    width: 200px;
-    margin-left: 20%;
+    margin-left: 20px;
 }
 
 .cuadros > div{
@@ -107,12 +105,14 @@ h2{
 
 .contenedor-tarjetas{
     margin-top: 30px;
+    overflow-x: scroll;
+    
 }
 
 .panel-horizontal{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -121,12 +121,29 @@ h2{
 }
 
 .card{
-    width: 300px;
+    width: 200px;
+    flex-direction: row;
+    border: 0px;
+    justify-content: space-evenly;
+}
+
+.card > img{
+    border-radius: 200rem;
+    width: 100px;
+}
+.card > img:hover{
+    border-radius: 0px;
+    transition: 4seg;
 }
 
 fieldset{
     border: 2px solid #ccc;
 }
+
+input{
+    margin: 20px;
+}
+
 footer{
     background-color:hsl(186, 80%, 86%);
     padding: 1rem 1.5rem 3rem;
