@@ -222,3 +222,19 @@ button{
 .compra{
     background-color: rgba(78, 255, 246, 0.144);
 }
+
+.local{
+    display:flex;
+    justify-content: space-around;
+}
+section > h3{
+    height: 80px;
+    display: flex;
+}
+
+.fotolocal {
+    display: flex;
+}
+.ubicacion {
+    display: flex;
+}
