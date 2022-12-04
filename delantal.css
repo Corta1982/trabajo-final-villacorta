@@ -136,12 +136,16 @@ section{
 .contenedor-tarjetas {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-top: 30px;
+    width: 900px;
+    row-gap: 20px;
 }
 
 .card > img{
-    width: 300px;
+    width: 200px;
+    margin: 5px 0 0 30px;
+    
 }
 
 .fila{
@@ -200,7 +204,7 @@ footer p{
     margin-left: 20px;
 }
 fieldset > label {
-    width: 150px;
+    width: 250px;
 }
 
 button{
@@ -227,14 +231,17 @@ button{
     display:flex;
     justify-content: space-around;
 }
+
 section > h3{
     height: 80px;
     display: flex;
 }
 
-.fotolocal {
-    display: flex;
+
+.comercio > h3 {
+    justify-content: center;
 }
-.ubicacion {
-    display: flex;
+
+.fotolocal > p {
+    margin-left: 30%;
 }

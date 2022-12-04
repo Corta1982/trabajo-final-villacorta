@@ -21,6 +21,7 @@
                 <img class= "card-img- top" src="/imagenes/belgrano 2.jpg" alt="">
                 <div class="card-body"></div>
                     <h4>Delantal Belgrano</h4>
+                    <p>$1500</p>
                 <div class="card-footer">
                     <p><a class= "btn btn-outline-primary" href="#">Comprar
                             <span class="badge badge-light">
@@ -39,6 +40,7 @@
                 <img class= "card-img- top" src="/imagenes/aylin.jpg" alt="">
                 <div class="card-body"></div>
                     <h4>Delantal Girl</h4>
+                    <p>$1500</p>
                 <div class="card-footer">
                     <p><a class= "btn btn-outline-primary" href="#">Comprar
                             <span class="badge badge-light">
@@ -57,6 +59,7 @@
                 <img class= "card-img- top" src="/imagenes/batman.jpg" alt="">
                 <div class="card-body"></div>
                     <h4>Delantal Batman</h4>
+                    <p>$1500</p>
                 <div class="card-footer">
                     <p><a class= "btn btn-outline-primary" href="#">Comprar
                         <span class="badge badge-light">
@@ -75,6 +78,7 @@
                 <img class= "card-img- top" src="/imagenes/talleres.jpg" alt="">
                 <div class="card-body"></div>
                     <h4>Delantal Talleres</h4>
+                    <p>$1500</p>
                 <div class="card-footer">
                     <p><a class= "btn btn-outline-primary" href="#">Comprar
                             <span class="badge badge-light">
@@ -93,6 +97,7 @@
                 <img class= "card-img- top" src="/imagenes/jeanmary.jpg" alt="">
                 <div class="card-body"></div>
                     <h4>Delantal Conejo</h4>
+                    <p>$1500</p>
                 <div class="card-footer">
                     <p><a class= "btn btn-outline-primary" href="#">Comprar
                             <span class="badge badge-light">
@@ -111,6 +116,7 @@
                 <img class= "card-img- top" src="/imagenes/flash.jpg" alt="">
                 <div class="card-body"></div>
                     <h4>Delantal Flash</h4>
+                    <p>$1500</p>
                 <div class="card-footer">
                     <p><a class= "btn btn-outline-primary" href="#">Comprar
                         <span class="badge badge-light">
@@ -129,6 +135,7 @@
                 <img class= "card-img- top" src="/imagenes/mujer maravilla.jpg" alt="">
                 <div class="card-body"></div>
                     <h4>Delantal Woman</h4>
+                    <p>$1500</p>
                 <div class="card-footer">
                     <p><a class= "btn btn-outline-primary" href="#">Comprar
                             <span class="badge badge-light">
@@ -147,6 +154,7 @@
                 <img class= "card-img- top" src="/imagenes/artista.jpg" alt="">
                 <div class="card-body"></div>
                     <h4>Delantal Artista</h4>
+                    <p>$1500</p>
                 <div class="card-footer">
                     <p><a class= "btn btn-outline-primary" href="#">Comprar
                             <span class="badge badge-light">
@@ -165,6 +173,7 @@
                 <img class= "card-img- top" src="/imagenes/superman.jpg" alt="">
                 <div class="card-body"></div>
                     <h4>Delantal Superman</h4>
+                    <p>$1500</p>
                 <div class="card-footer">
                     <p><a class= "btn btn-outline-primary" href="#">Comprar
                         <span class="badge badge-light">
@@ -183,12 +192,44 @@
         <form action="/action_page.php" method="get" id="nameform">
             <fieldset>
                     <legend>HACE TU PEDIDO PERSONALIZADO</legend><br>
-                    <label for="nombre"><span>Dejame tu nombre:</span></label>
-                    <input type="text" name="name" id="">
-                    <br><br>
-                    <label for="contacto">Dejame tu número:</label>
-                    <input type="number"  name="" id="">
-                    <br><br>
+                    <label for="nombre"><span>Nombre:*</span></label>
+                    <input type="text" name="name" id="" placeholder="Escribe tu nombre" autofocus required>
+                    <br>
+                    <label for="contacto">Número de Teléfono:*</label>
+                    <input type="number"  name="" id="" placeholder="351-0000-000" required>
+                    <br>
+                    <label for="direccion">Dirección de entrega:*</label>
+                    <input type="text"  name="" id="" placeholder="Dirección" required>
+                    <br>
+                    <label for="provincia">Localidad*</label>
+                    <input list="provincia">
+                        <datalist id="provincia">
+                            <option value="Buenos Aires">
+                            <option value="Ciudad Autónoma de Buenos Aires">
+                            <option value="Catamarca">
+                            <option value="Chaco">
+                            <option value=" Chubut">
+                            <option value="Córdoba">
+                            <option value="Corrientes">
+                            <option value="Entre Ríos">
+                            <option value=Formosa"">
+                            <option value="Jujuy">
+                            <option value="La Pampa">
+                            <option value="La Rioja">
+                            <option value="Mendoza">
+                            <option value="Misiones">
+                            <option value="Neuquén">
+                            <option value=" Río Negro">
+                            <option value="Salta">
+                            <option value="San Juan">
+                            <option value="San Luis">
+                            <option value="Santa Cruz">
+                            <option value="Santa Fe">
+                            <option value="Santiago del Estero">
+                            <option value="Tierra del Fuego, Antártida e Islas del Atlántico Sur">
+                            <option value="Tucumán">
+                        </datalist>
+                    
                     <button type="submit" class="button" form="form1" value="Submit">Enviar</button>
             </fieldset>
             <fieldset>
@@ -200,10 +241,12 @@
                     <input type="color" name="" id="">Elige el color del delantal
             </fieldset>
         </form>
-        <section class="local">
+        <section class="comercio">
             <h3>VISITA NUESTRO LOCAL</h3>
-            <div>
-                <div class="fotolocal"><img src="/imagenes/local1.jpg" alt=""></div>
+            <div class="local">
+                <div class="fotolocal"><img src="/imagenes/local1.jpg" alt=""><br>
+                    <p>San Jerónimmo 2700. Bº San Vicente. <br>Córdoba Cap.</p>
+                </div>
                 <div class="ubicacion"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.6622004283363!2d-64.15180712489669!3d-31.423431796591!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a2b4dedbe7d9%3A0x52549a2361c0a6a8!2sSan%20Jer%C3%B3nimo%202700%2C%20X5006IKD%20C%C3%B3rdoba!5e0!3m2!1ses!2sar!4v1669845438169!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
                
             </div>
