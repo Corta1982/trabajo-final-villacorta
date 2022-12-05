@@ -11,6 +11,16 @@
 <body>
     <header>
         <h1><marquee>kids' APRON</marquee></h1>
+        <div class="menu">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="delantales.html">Productos</a></li>
+                    <li><a href="compra.html">Venta</a></li>
+                   
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
         <section class="banner">
@@ -189,57 +199,71 @@
         </div>
         <br><br>
         
-        <form action="/action_page.php" method="get" id="nameform">
-            <fieldset>
-                    <legend>HACE TU PEDIDO PERSONALIZADO</legend><br>
-                    <label for="nombre"><span>Nombre:*</span></label>
-                    <input type="text" name="name" id="" placeholder="Escribe tu nombre" autofocus required>
-                    <br>
-                    <label for="contacto">Número de Teléfono:*</label>
-                    <input type="number"  name="" id="" placeholder="351-0000-000" required>
-                    <br>
-                    <label for="direccion">Dirección de entrega:*</label>
-                    <input type="text"  name="" id="" placeholder="Dirección" required>
-                    <br>
-                    <label for="provincia">Provincia*</label>
-                    <input list="provincia">
-                        <datalist id="provincia">
-                            <option value="Buenos Aires">
-                            <option value="Ciudad Autónoma de Buenos Aires">
-                            <option value="Catamarca">
-                            <option value="Chaco">
-                            <option value=" Chubut">
-                            <option value="Córdoba">
-                            <option value="Corrientes">
-                            <option value="Entre Ríos">
-                            <option value=Formosa"">
-                            <option value="Jujuy">
-                            <option value="La Pampa">
-                            <option value="La Rioja">
-                            <option value="Mendoza">
-                            <option value="Misiones">
-                            <option value="Neuquén">
-                            <option value=" Río Negro">
-                            <option value="Salta">
-                            <option value="San Juan">
-                            <option value="San Luis">
-                            <option value="Santa Cruz">
-                            <option value="Santa Fe">
-                            <option value="Santiago del Estero">
-                            <option value="Tierra del Fuego, Antártida e Islas del Atlántico Sur">
-                            <option value="Tucumán">
-                        </datalist>
-                    
-                    <button type="submit" class="button" form="form1" value="Submit">Enviar</button>
-            </fieldset>
-            <fieldset>
-                    <legend> Elije tu diseño</legend>
-                    <input type="text" name="" id="">Escribe los Detalles
-                    <br>
-                    <input type="checkbox" name="" value="">con o sin nombre
-                    <br><br>
-                    <input type="color" name="" id="">Elige el color del delantal
-            </fieldset>
+        <form class="form-group" action="/action_page.php" method="get" id="nameform">
+                <fieldset>
+                        <legend>HACE TU PEDIDO PERSONALIZADO</legend><br>
+                        <label for="nombre"><span>Nombre:*</span></label>
+                        <input type="text" name="name" id="" placeholder="Escribe tu nombre" required>
+                        <br>
+                        <label for="contacto">Número de Teléfono:*</label>
+                        <input type="number"  name="" id="" placeholder="351-0000-000" required>
+                        <br>
+                        <label for="direccion">Dirección de entrega:*</label>
+                        <input type="text"  name="" id="" placeholder="Dirección" required>
+                        <br>
+                        <label for="provincia">Provincia*</label>
+                        <input list="provincia" placeholder="Provincia" required>
+                            <datalist id="provincia">
+                                <option value="Buenos Aires">
+                                <option value="Ciudad Autónoma de Buenos Aires">
+                                <option value="Catamarca">
+                                <option value="Chaco">
+                                <option value=" Chubut">
+                                <option value="Córdoba">
+                                <option value="Corrientes">
+                                <option value="Entre Ríos">
+                                <option value=Formosa"">
+                                <option value="Jujuy">
+                                <option value="La Pampa">
+                                <option value="La Rioja">
+                                <option value="Mendoza">
+                                <option value="Misiones">
+                                <option value="Neuquén">
+                                <option value=" Río Negro">
+                                <option value="Salta">
+                                <option value="San Juan">
+                                <option value="San Luis">
+                                <option value="Santa Cruz">
+                                <option value="Santa Fe">
+                                <option value="Santiago del Estero">
+                                <option value="Tierra del Fuego, Antártida e Islas del Atlántico Sur">
+                                <option value="Tucumán">
+                            </datalist>
+                </fieldset>
+                <fieldset>
+                        <label class="detalles" for="detalles">Escribe los detalles:*</label>
+                        <textarea name="detalles" id="detalles" placeholder=
+                        "Nombre personalizado,  
+Personaje preferido,...etc" required></textarea>
+                        <br><br>
+                        <label for="color">Elije el color del delantal:*</label><br>
+                        <div class="opcion">
+                            <section>
+                                <input type="radio" name="color" id="rojo">rojo <br>
+                                <input type="radio" name="color" id="verde">verde <br>
+                                <input type="radio" name="color" id="rosa claro"> rosa claro <br>
+                                <input type="radio" name="color" id="rosa oscuro">rosa oscuro <br>
+                            </section>
+                            <section>
+                                <input type="radio" name="color" id="negro">negro <br>
+                                <input type="radio" name="color" id="azul">azul <br>
+                                <input type="radio" name="color" id="amarillo">amarillo <br>
+                                <input type="radio" name="color" id="blanco">blanco <br>
+                            </section>
+                        </div>
+                        <button type="submit" class="button" form="form1" value="Submit">Enviar</button>
+                </fieldset>
+                <img src="/imagenes/publicidad1.png" alt="">
         </form>
         <section class="comercio">
             <h3>VISITA NUESTRO LOCAL</h3>

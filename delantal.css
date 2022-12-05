@@ -4,21 +4,53 @@
 @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
 
 header{
-    display: flex;
-    background-color: #00d3f827;
+    display:inline-flexbox;
+    background-color: #D8A7B1;
     height: 150px;
 }
 
 h1{
     font-family: 'Luckiest Guy', cursive;
-    font-size: 7em;
+    font-size: 6em;
     margin-left:20px;
-    translate: 400px;
-       
+    translate: 200px;
 }
 
 h1:hover{
     transform: scale(1.2);
+}
+
+.menu > nav {
+    display: flex;
+    justify-content:end;
+    width: auto;
+    background: #ca9aa4;
+}
+
+.menu > nav > ul{
+    display:flex;
+    background-color: #ca9aa4;
+    list-style: none;
+    width: auto;
+    margin: 0px;
+    padding: 0px;
+}
+
+.menu > nav > ul > li a {
+    padding: 10px 20px;
+    display: inline-block;
+    color:#000;
+    text-decoration:none;
+}
+
+.menu > nav > ul > li a:hover{
+    background:#b275ec;
+    color:#fff;
+}
+
+.banner {
+    background-color: #D8A7B1;
+    margin-top: 65px;
 }
 
 .banner > img {
@@ -32,8 +64,8 @@ h1:hover{
     background-position-x: right;
     background-position-y: 80px;
     margin-right: 50px;
-    
 }
+
 .inicio{
     font-size: 30px;
     text-align: center;
@@ -44,12 +76,12 @@ h1:hover{
 }
 
 
-.diseño{
+.diseño {
     height: 100px;
-    background-image:url(/imagenes/fondo-colores.jpg);
+    background-image:url(/imagenes/barracolor.png);
 }
 
-h2{
+h2 {
     font-family: 'Nerko One', cursive;  
     padding-top: 5px;
     font-size: 6em;
@@ -57,11 +89,11 @@ h2{
     letter-spacing: 30px;
 }
 
-.cuadros{
+.cuadros {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    background-color: rgb(99, 176, 182);
+    background-color: #D8A7B1;
     row-gap: 10px;
     column-gap: 10px;
     grid:
@@ -82,7 +114,7 @@ h2{
 }
 
 .cuadros > div{
-    background-color: rgba(16, 255, 195, 0.459);
+    background-color: #B6E2D3;
     padding: 20px 20px;
 }
 
@@ -155,7 +187,7 @@ section{
 }
 
 .grid-area{
-    background-color: aqua;
+    background-color: #D8A7B1;
     border:2px solid;
 }
 .card-img- {
@@ -170,17 +202,47 @@ section{
     transform: scale(1.5);
     transition: 4seg;
 }
-
-fieldset{
-    border: 2px solid #ccc;
+form {
+    background-color: #FAE8E0;
+    display: flex;
+    margin-left: 20px;
 }
 
+legend {
+    margin-left: 20%;
+}
+fieldset{
+   padding: 10px;
+    width: 471px;
+}
+
+fieldset > label {
+    width: 200px;
+    margin-left: 10px;
+}
+.detalles{
+    margin-top: 40px;
+}
 input{
-    margin: 20px;
+    margin: 10px;
+}
+textarea {
+    width: -webkit-fill-available;
+}
+.opcion{
+    display: flex;
+    justify-content: space-evenly;
+   
+}
+.opcion > section{
+    background-color: #FAE8E0;
+}
+form > img{
+    width: 400px;
 }
 
 footer{
-    background-color:hsl(186, 80%, 86%);
+    background-color:#B6E2D3;
     padding: 1rem 1.5rem 3rem;
     
 }
@@ -203,9 +265,7 @@ footer p{
 .listaItem{
     margin-left: 20px;
 }
-fieldset > label {
-    width: 250px;
-}
+
 
 button{
     margin-left: 200px;
@@ -213,7 +273,7 @@ button{
     background-color: #008CBA;
     border-radius: 0.25rem;
     color: white;
-    padding: 15px 32px;
+   /* padding: 15px 32px;*/
     text-align: center;
     display: inline-block;
     font-size: 16px;
@@ -222,6 +282,13 @@ button{
 
 .compraboton {
     margin: 30px 0 0 45%;
+    padding: 15px 32px;
+    background-color: #008CBA;
+    border-radius: 0.25rem;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    border: solid #008CBA;
 }
 .compra{
     background-color: rgba(78, 255, 246, 0.144);
